@@ -6,6 +6,7 @@ const preferDefault = m => m && m.default || m
 
 exports.components = {
   "component---cache-dev-404-page-js": hot(preferDefault(require("D:\\HUNGRYBEARSTUDIO\\GATSBY-THEMES\\gatsby-theme-pocket\\packages\\demo\\.cache\\dev-404-page.js"))),
+  "component---gatsby-theme-pocket-src-pages-article-index-js": hot(preferDefault(require("D:\\HUNGRYBEARSTUDIO\\GATSBY-THEMES\\gatsby-theme-pocket\\packages\\gatsby-theme-pocket\\src\\pages\\articleIndex.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("D:\\HUNGRYBEARSTUDIO\\GATSBY-THEMES\\gatsby-theme-pocket\\packages\\demo\\src\\pages\\index.js")))
 }
 

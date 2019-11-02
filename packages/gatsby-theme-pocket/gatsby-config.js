@@ -16,13 +16,13 @@ module.exports = (options) => {
         searchFilter,
         searchFilterString
     } = options;
-    console.log('ENV: ', process.env.POCKET_CONSUMER_KEY)
+    console.log('ENV: ', process.env.GATSBY_TEST_KEY)
    return {
     plugins: [
         {
           resolve: `gatsby-source-pocket`,
           options: {
-            consumerKey: process.env.POCKET_CONSUMER_KEY,
+            consumerKey: '88326-cf4f8f5d0591e3620ece0459',
             accessToken: pocketAccessToken,
             weeksOfHistory,
             apiMaxRecordsToReturn: 3000,
@@ -37,7 +37,9 @@ module.exports = (options) => {
             domainFilter: false,
             domainFilterString: "buzzfeed.com"
           }
-        }
+        },
+        'gatsby-plugin-emotion',
+        'gatsby-plugin-theme-ui'
       ]
    }
   };

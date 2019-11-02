@@ -1,1 +1,1 @@
-// no-op
+export {default as Article} from './src/components/Articles';

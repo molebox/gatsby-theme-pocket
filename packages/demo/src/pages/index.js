@@ -1,3 +1,4 @@
 import React from 'react';
+import Articles from 'gatsby-theme-pocket/src/components/Articles';
 
-export const Index = () => <h1>TEST</h1>;
+export const Index = () => <Articles/>;

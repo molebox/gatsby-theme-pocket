@@ -2,7 +2,16 @@
   "stages": {
     "develop": {
       "plugins": [],
-      "presets": [],
+      "presets": [
+        {
+          "name": "D:\\HUNGRYBEARSTUDIO\\GATSBY-THEMES\\gatsby-theme-pocket\\node_modules\\@emotion\\babel-preset-css-prop\\dist\\babel-preset-css-prop.cjs.js",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        }
+      ],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
@@ -10,7 +19,16 @@
     },
     "develop-html": {
       "plugins": [],
-      "presets": [],
+      "presets": [
+        {
+          "name": "D:\\HUNGRYBEARSTUDIO\\GATSBY-THEMES\\gatsby-theme-pocket\\node_modules\\@emotion\\babel-preset-css-prop\\dist\\babel-preset-css-prop.cjs.js",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        }
+      ],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
@@ -18,7 +36,16 @@
     },
     "build-html": {
       "plugins": [],
-      "presets": [],
+      "presets": [
+        {
+          "name": "D:\\HUNGRYBEARSTUDIO\\GATSBY-THEMES\\gatsby-theme-pocket\\node_modules\\@emotion\\babel-preset-css-prop\\dist\\babel-preset-css-prop.cjs.js",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        }
+      ],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
@@ -26,7 +53,16 @@
     },
     "build-javascript": {
       "plugins": [],
-      "presets": [],
+      "presets": [
+        {
+          "name": "D:\\HUNGRYBEARSTUDIO\\GATSBY-THEMES\\gatsby-theme-pocket\\node_modules\\@emotion\\babel-preset-css-prop\\dist\\babel-preset-css-prop.cjs.js",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        }
+      ],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
