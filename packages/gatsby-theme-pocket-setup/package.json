@@ -1,0 +1,13 @@
+{
+  "name": "@hungrybearstudio/gatsby-theme-pocket-setup",
+  "version": "0.0.1",
+  "description": "Setup script to get pocket access token",
+  "bin": {
+    "pocket-setup": "bin/setup.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-getpocket": "^1.0.0",
+    "shelljs": "^0.8.3"
+  }
+}
