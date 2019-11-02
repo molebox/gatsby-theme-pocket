@@ -5,6 +5,8 @@ require("dotenv").config({
   path: `.env.${activeEnv}`,
 })
 
+console.log({activeEnv})
+
 module.exports = (options) => {
     const {
         pocketAccessToken,
@@ -14,7 +16,7 @@ module.exports = (options) => {
         searchFilter,
         searchFilterString
     } = options;
-
+    console.log('ENV: ', process.env.POCKET_CONSUMER_KEY)
    return {
     plugins: [
         {
@@ -27,11 +29,11 @@ module.exports = (options) => {
             getCurrentWeekOnly: `n`,
             stateFilterString: "all",
             tagFilter,
-            tagFilterString: tagFilterString || "_untagged_",
+            tagFilterString: tagFilterString ? tagFilterString : "_untagged_",
             favouriteFilter: false,
             favouriteFilterValue: 0,
             searchFilter,
-            searchFilterString,
+            searchFilterString: searchFilterString ? searchFilterString : 'Web Dev',
             domainFilter: false,
             domainFilterString: "buzzfeed.com"
           }
