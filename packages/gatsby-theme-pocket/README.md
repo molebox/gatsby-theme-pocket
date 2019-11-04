@@ -6,7 +6,7 @@ A Gatsby theme that adds your saved pocket articles to your gatsby site. You sho
 
 ### Authorize your pocket account
 
-You will first need to authorize your pocket credentials. Install the package `@hungrybearstudio/gatsby-theme-pocket-setup` and run `pocket-setup` from the command line. Open the browser at the given url and authorize your account. You will then be given an access-token unique to your account. Save this as you will need to pass this to the `gatsby-theme-pocket` in the next step.
+You will first need to authorize your pocket credentials. Install the package `@hungrybearstudio/gatsby-theme-pocket-setup` and run `yarn pocket-setup` from the command line. Open the browser at the given url and authorize your account. You will then be given an access-token unique to your account. Save this as you will need to pass this to the `gatsby-theme-pocket` in the next step.
 
 ### Setup theme
 
