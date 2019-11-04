@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-pocket",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A gatsby theme that adds pocket to your website",
   "main": "index.js",
   "license": "MIT",
@@ -10,6 +10,9 @@
     "clean": "gatsby clean",
     "pretty-check": "prettier --check \"src/**/*.{js,tsx,ts}\"",
     "pretty": "prettier --write \"src/**/*{js,tsx,ts}\""
+  },
+  "bin": {
+    "pocket-setup": "bin/setup.js"
   },
   "keywords": [
     "gatsby",
@@ -30,8 +33,10 @@
     "gatsby-plugin-theme-ui": "^0.2.43",
     "gatsby-source-pocket": "^2.3.1",
     "gatsby-transformer-sharp": "^2.3.2",
+    "node-getpocket": "^1.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "shelljs": "^0.8.3",
     "theme-ui": "^0.2.46"
   },
   "devDependencies": {
