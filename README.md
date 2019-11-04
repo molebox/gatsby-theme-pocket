@@ -47,11 +47,11 @@ The Article component (card) is a separate component which can be shadowed and a
 The theme uses [theme-ui](https://theme-ui.com/) out of the box so if you wish to edit the colors or fonts used you can shadow the theme-ui index of this theme and change them. The Article component uses the sx prop to style its elements meaning you can make the changes in your theme-ui file and they will update the component.
 
 **TODO:**
-    - Update readME to include full examples and descriptions of what can be done.
-    - Add more options to the theme-ui context which will enable easier editing of the components.
-    - Add different layout defaults - currently a center flexbox layout. Perhaps add a grid option
-    - Add favorites
-    - Add tags to articles
+- Update readME to include full examples and descriptions of what can be done.
+- Add more options to the theme-ui context which will enable easier editing of the components.
+- Add different layout defaults - currently a center flexbox layout. Perhaps add a grid option
+- Add favorites
+- Add tags to articles
 
 ## Built With
 
