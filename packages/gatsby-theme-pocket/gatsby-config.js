@@ -16,7 +16,7 @@ module.exports = (options) => {
         searchFilter,
         searchFilterString
     } = options;
-    console.log('ENV: ', process.env.GATSBY_TEST_KEY)
+
    return {
     plugins: [
         {

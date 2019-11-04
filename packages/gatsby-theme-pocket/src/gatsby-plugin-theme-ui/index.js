@@ -9,11 +9,7 @@ export default {
     // these are the default colors
     white: "#FFFFFF",
     black: "#000000",
-    text: "#FFFFFF",
-    darkText: "#000000",
-    background: "#212121",
-    primary: "#DF7334",
-    secondary: "#A5A5A5"
+    lightGrey: "#8d8d8d"
 
     // modes: {
     // 	// this is the dark color mode colors
