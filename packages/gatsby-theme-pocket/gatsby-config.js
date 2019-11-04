@@ -5,8 +5,6 @@ require("dotenv").config({
   path: `.env.${activeEnv}`,
 })
 
-console.log({activeEnv})
-
 module.exports = (options) => {
     const {
         pocketAccessToken,
@@ -16,6 +14,8 @@ module.exports = (options) => {
         searchFilter,
         searchFilterString
     } = options;
+
+    console.log(process.env.POCKET_CONSUMER_KEY)
 
    return {
     plugins: [

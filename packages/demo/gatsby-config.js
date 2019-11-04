@@ -5,7 +5,7 @@ module.exports = {
             options: {
                 pocketAccessToken: 'fec8ada1-0455-8909-9ad6-a80f23',
                 weeksOfHistory: 52,
-                tagFilter: false,
+                tagFilter: true,
                 searchFilter: false
             }
         }
