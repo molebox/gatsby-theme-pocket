@@ -15,8 +15,6 @@ module.exports = (options) => {
         searchFilterString
     } = options;
 
-    console.log(process.env.POCKET_CONSUMER_KEY)
-
    return {
     plugins: [
         {
