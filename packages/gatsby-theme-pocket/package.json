@@ -4,6 +4,10 @@
   "description": "A gatsby theme that adds pocket to your website",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/molebox/gatsby-theme-pocket"
+  },
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
@@ -36,6 +40,7 @@
     "node-getpocket": "^1.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-select": "^3.0.8",
     "shelljs": "^0.8.3",
     "theme-ui": "^0.2.46"
   },
