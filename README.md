@@ -6,7 +6,7 @@ A Gatsby theme that adds your saved pocket articles to your gatsby site. You sho
 
 ### Authorize your pocket account
 
-You will first need to authorize your pocket credentials. Install the package `@hungrybearstudio/gatsby-theme-pocket-setup` and run `yarn pocket-setup` from the command line. Open the browser at the given url and authorize your account. You will then be given an access-token unique to your account. Save this as you will need to pass this to the `gatsby-theme-pocket` in the next step.
+You will first need to authorize your pocket credentials. Run `yarn pocket-setup` from the command line. Open the browser at the given url and authorize your account. You will then be given an access-token unique to your account. Save this as you will need to pass this to the `gatsby-theme-pocket` in the next step.
 
 ### Setup theme
 
@@ -20,7 +20,8 @@ module.exports = {
             options: {
                 pocketAccessToken: 'MY_ACCESS_TOKEN',
                 weeksOfHistory: 52,
-                tagFilter: false,
+                tagFilter: true,
+                tagFilterString: 'dev',
                 searchFilter: false
             }
         }
@@ -52,6 +53,7 @@ The theme uses [theme-ui](https://theme-ui.com/) out of the box so if you wish t
 - Add different layout defaults - currently a center flexbox layout. Perhaps add a grid option
 - Add favorites
 - Add tags to articles
+- Add search functionality
 
 ## Built With
 
