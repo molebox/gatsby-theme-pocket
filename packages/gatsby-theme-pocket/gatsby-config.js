@@ -52,7 +52,6 @@ module.exports = (options) => {
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
         'gatsby-plugin-emotion',
-        'gatsby-plugin-theme-ui'
       ]
    }
   };

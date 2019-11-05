@@ -1,9 +1,6 @@
 var plugins = [{
       plugin: require('D:/HUNGRY BEAR STUDIO/GATSBY-THEMES/gatsby-theme-pocket/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":["Josefin Sans","Poppins","Open Sans","source sans pro:300,400,400i,700"]},
-    },{
-      plugin: require('D:/HUNGRY BEAR STUDIO/GATSBY-THEMES/gatsby-theme-pocket/node_modules/gatsby-plugin-theme-ui/gatsby-ssr'),
-      options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
