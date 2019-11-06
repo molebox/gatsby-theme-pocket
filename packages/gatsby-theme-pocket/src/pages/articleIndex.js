@@ -31,6 +31,7 @@ const ArticleIndex = () => {
         title={seoTitle}
         description={seoDescription}
         keywords={seoKeywords}
+        twitter="studio_hungry"
       />
       <Header>
         <h1

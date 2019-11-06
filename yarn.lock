@@ -5581,10 +5581,10 @@ gatsby-telemetry@^1.1.35:
     stack-utils "1.0.2"
     uuid "3.3.3"
 
-gatsby-theme-seo@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-seo/-/gatsby-theme-seo-0.1.0.tgz#683216257cd834f308045ceb7ecca015eb47bc95"
-  integrity sha512-uZDJQlLKdz6eb5W2QhwlHfPEcXEW7ipiHbubuqLlEfV8ORmuw2oSnJxCVbyId6i7bw8yG51JuLlgBCXfJFycSA==
+gatsby-theme-seo@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-seo/-/gatsby-theme-seo-1.0.0.tgz#b175b85c90cd4e3a33b705fd2b1ded66a9fd92ee"
+  integrity sha512-dzYJYSiwvrOMbCuPBCoheAJPnyNx5Q/8lCLJ1sPw3BlKOFsMmFyxPaoWfOj+SpjybjbCzaIPvm3HLpf6trY6Aw==
   dependencies:
     gatsby-plugin-react-helmet "^3.1.7"
     gatsby-plugin-sitemap "^2.2.19"

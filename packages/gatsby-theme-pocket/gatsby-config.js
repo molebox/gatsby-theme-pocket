@@ -70,9 +70,6 @@ module.exports = (options) => {
               description: seoDescription,
               author: 'Rich Haines - Hungry Bear Studio',
               siteUrl,
-              social: {
-                  twitter: 'studio_hungry'
-              }
           }
       }
       ]
