@@ -1,16 +1,17 @@
 /** @jsx jsx */
 import { jsx } from "../context";
 import styled from "@emotion/styled";
+import moment from "moment";
 
 export const Card = styled.a`
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 1.5em;
-  max-width: 800px;
+  // max-width: 800px;
   margin: 1em;
   cursor: pointer;
-  border-radius: 0.2em;
+  border-radius: 0.5em;
   text-decoration: none;
   width: 100%;
 
@@ -18,11 +19,11 @@ export const Card = styled.a`
     margin-top: 1em;
     margin-bottom: 1em;
     align-self: center;
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 
   & > h3 {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   /* 48em = 768px DESKTOP */
@@ -52,7 +53,9 @@ export const Card = styled.a`
 `;
 
 export const Image = styled.img`
-  max-height: 300px;
+  width: 100%;
+  height: auto;
+
   margin: 1em;
   border-radius: 1em;
   padding: 1em;
@@ -83,14 +86,19 @@ const Article = ({
   excerpt,
   word_count,
   articleDomain,
-  shadow
+  shadow,
+  time_added
 }) => {
+  const dateAdded = moment.unix(time_added).format("DD MMM YYYY");
+
   return (
     <Card
       href={url}
       shadow={shadow}
       sx={{
-        backgroundColor: "white"
+        backgroundColor: "white",
+        border: "1px solid",
+        borderColor: "black"
       }}
     >
       <Favicon src={domainFavicon} />
@@ -108,7 +116,7 @@ const Article = ({
       >
         {title}
       </h2>
-      {has_image ? <Image src={imageSrc} /> : null}
+      {has_image ? <Image src={imageSrc} alt={`${title}-image`} /> : null}
       <h3
         sx={{
           fontFamily: "body",
@@ -118,7 +126,21 @@ const Article = ({
       >
         {excerpt}
       </h3>
-      <Info>
+      <Info
+        sx={{
+          borderTop: "1px solid",
+          borderColor: "#9e9d9d",
+          paddingTop: "1em"
+        }}
+      >
+        <p
+          sx={{
+            fontFamily: "heading",
+            color: "lightGrey"
+          }}
+        >
+          Date Added: {dateAdded}
+        </p>
         <p
           sx={{
             fontFamily: "heading",

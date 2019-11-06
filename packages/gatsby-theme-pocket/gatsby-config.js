@@ -12,10 +12,23 @@ module.exports = (options) => {
         tagFilter,
         tagFilterString,
         searchFilter,
-        searchFilterString
+        searchFilterString,
+        pageTitle,
+        pageDescription,
+        seoTitle,
+        seoDescription,
+        seoKeywords,
+        siteUrl
     } = options;
 
    return {
+    siteMetadata: {
+      pageTitle,
+      pageDescription,
+      seoTitle,
+      seoDescription,
+      seoKeywords
+  },
     plugins: [
         {
           resolve: `gatsby-source-pocket`,
@@ -50,6 +63,18 @@ module.exports = (options) => {
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
         'gatsby-plugin-emotion',
+        {
+          resolve: 'gatsby-theme-seo', 
+          options: {
+              title: seoTitle,
+              description: seoDescription,
+              author: 'Rich Haines - Hungry Bear Studio',
+              siteUrl,
+              social: {
+                  twitter: 'studio_hungry'
+              }
+          }
+      }
       ]
    }
   };

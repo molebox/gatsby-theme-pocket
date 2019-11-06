@@ -1,9 +1,9 @@
 import React from 'react';
-import Articles from 'gatsby-theme-pocket/src/components/Articles';
+import { Link } from 'gatsby';
 
 export const Index = () => (
     <div>
-        <h1>Header ...</h1>
-        <Articles/>
+        <h1>Take me to the articles!!</h1>
+        <Link to="/articleIndex">The Articles</Link>
     </div>
 );

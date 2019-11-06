@@ -8,5 +8,4 @@ require("dotenv").config({
 })
 console.log('Running pocket authorization...')
 const key = '88326-cf4f8f5d0591e3620ece0459';
-console.log('key: ', key);
 shell.exec(`node node_modules/node-getpocket/authorise --consumerkey ${key}`)

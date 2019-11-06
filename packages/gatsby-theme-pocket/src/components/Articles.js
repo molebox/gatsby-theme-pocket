@@ -12,6 +12,9 @@ const Container = styled.section`
   flex-direction: column;
   align-items: center;
   margin: 2em;
+
+  max-width: 1080px;
+  margin: 0 auto;
 `;
 
 const Articles = () => {
@@ -50,6 +53,7 @@ const Articles = () => {
               word_count={node.word_count}
               articleDomain={node.articleDomain}
               url={node.url}
+              time_added={node.time_added}
             />
           );
         } else if (selectedTags.length === 0) {
@@ -64,6 +68,7 @@ const Articles = () => {
               word_count={node.word_count}
               articleDomain={node.articleDomain}
               url={node.url}
+              time_added={node.time_added}
             />
           );
         }
@@ -96,6 +101,7 @@ export const query = graphql`
           domainFavicon
           articleDomain
           id
+          time_added
         }
       }
     }

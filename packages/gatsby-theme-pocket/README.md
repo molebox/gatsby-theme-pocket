@@ -1,6 +1,10 @@
 # gatsby-theme-pocket
 
-A Gatsby theme that adds your saved pocket articles to your gatsby site. You should make sure to have some articles saved in your app before setup.
+A Gatsby theme that adds your saved pocket articles to your gatsby site with inbuilt SEO. 
+
+The idea behind this theme is to add a curated list of articles of interest to your website. These can be for your personal site where you want to keep a list of articles you read, your business site where you want to show your visitors articles that relate to your market or just a place to save stuff that interests you from the internet. You need to have the pocket app installed on your mobile or the browser extension, it is from there that you save your articles. 
+
+The articles are filtered by tag so when you save an article in your app or browser you should tag them so that they are categorized and easier for people to view.
 
 ## Setup
 
@@ -15,14 +19,19 @@ Once you have you access token you can then install the theme `yarn add gatsby-t
 ```
 module.exports = {
     plugins: [
-         {
+        {
             resolve: 'gatsby-theme-pocket',
             options: {
-                pocketAccessToken: 'MY_ACCESS_TOKEN',
+                pocketAccessToken: MY_ACCESS_TOKEN,
                 weeksOfHistory: 52,
-                tagFilter: true,
-                tagFilterString: 'dev',
-                searchFilter: false
+                tagFilter: false,
+                searchFilter: false,
+                pageTitle: 'Articles of interest',
+                pageDescription: 'This is a curated list of articles tagged under different areas of interest.',
+                seoTitle: 'gatsby-theme-pocket',
+                seoDescription: 'A Gatsby theme that adds your pocket app articles to your gatsby website',
+                seoKeywords: ['gatsby', 'react', 'pocket', 'gatsby-theme', 'gatsby-plugin', 'articles'],
+                siteUrl: 'https://www.hungrybearstudio.com/'
             }
         }
     ]

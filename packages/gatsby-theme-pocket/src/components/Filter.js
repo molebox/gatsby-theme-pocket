@@ -3,21 +3,8 @@ import { jsx } from "../context";
 import Select, { components } from "react-select";
 import makeAnimated from "react-select/animated";
 
-const controlStyles = {
-  borderRadius: "20px",
-  padding: "15px",
-  background: "#E5E5E5",
-  color: "#005056",
-  marginTop: "25px"
-};
-
 const controlComponent = props => (
-  <div
-    sx={{
-      fontFamily: "body"
-    }}
-    style={controlStyles}
-  >
+  <div>
     <components.Control {...props} />
   </div>
 );
@@ -37,16 +24,17 @@ const Filter = props => {
   return (
     <Select
       sx={{
-        width: "800px",
+        width: "100%",
         position: "sticky",
         top: "0",
         color: "black",
-        fontFamily: "body"
+        fontFamily: "body",
+        borderColor: "blue"
       }}
       isMulti
       isClearable
       name="filter"
-      label="Filter by tags"
+      placeholder="Filter by tags..."
       options={articleTags}
       components={animatedComponents}
       onChange={handleSelection}
