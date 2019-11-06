@@ -10,11 +10,11 @@ The articles are filtered by tag so when you save an article in your app or brow
 
 ### Authorize your pocket account
 
-You will first need to authorize your pocket credentials. Run `yarn pocket-setup` from the command line. Open the browser at the given url and authorize your account. You will then be given an access-token unique to your account. Save this as you will need to pass this to the `gatsby-theme-pocket` in the next step.
+Run `yarn add gatsby-theme-pocket` You will first need to authorize your pocket credentials. Run `yarn pocket-setup` from the command line. Open the browser at the given url and authorize your account. You will then be given an access-token unique to your account. Save this as you will need to pass this to the `gatsby-theme-pocket` in the next step.
 
 ### Setup theme
 
-Once you have you access token you can then install the theme `yarn add gatsby-theme-pocket`
+Once you have the theme installed and your access-token add the theme to your `gatsby-config.js`
 
 ```
 module.exports = {
@@ -61,7 +61,7 @@ The theme uses [theme-ui](https://theme-ui.com/) out of the box so if you wish t
 - Add more options to the theme-ui context which will enable easier editing of the components.
 - Add different layout defaults - currently a center flexbox layout. Perhaps add a grid option
 - Add favorites
-- Add tags to articles
+- Add tags to articles - Done
 - Add search functionality
 
 ## Built With
