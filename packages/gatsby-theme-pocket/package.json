@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-pocket",
-  "version": "0.2.11",
+  "version": "0.2.12",
   "description": "A gatsby theme that adds pocket to your website",
   "main": "index.js",
   "license": "MIT",
