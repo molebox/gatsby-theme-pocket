@@ -1,9 +1,20 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import styled from '@emotion/styled';
 
-export const Index = () => (
-    <div>
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 1em;
+`;
+
+const Index = () => (
+    <Container>
         <h1>Take me to the articles!!</h1>
         <Link to="/articleIndex">The Articles</Link>
-    </div>
+    </Container>
 );
+
+export default Index;

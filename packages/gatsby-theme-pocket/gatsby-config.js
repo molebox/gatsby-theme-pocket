@@ -21,6 +21,8 @@ module.exports = (options) => {
         siteUrl
     } = options;
 
+    console.log('ENV: ', process.env.POCKET_CONSUMER_KEY);
+
    return {
     siteMetadata: {
       pageTitle,
