@@ -20,7 +20,8 @@ const Container = styled.section`
 const Articles = () => {
   const articlesInfo = useStaticQuery(query);
   const articles = articlesInfo.allPocketArticle.edges;
-  const articleTags = articles.map(({ node }) => node.tags).flat();
+  const articleTags = articles.map(({ node }) => node.tags);
+  articleTags.flat();
 
   const tags = [...new Set(articleTags)];
   const [selectedTags, setSelectedTags] = React.useState([]);
