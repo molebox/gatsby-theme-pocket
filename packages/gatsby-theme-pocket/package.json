@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-pocket",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "description": "A gatsby theme that adds pocket to your website",
   "main": "index.js",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "pretty": "prettier --write \"src/**/*{js,tsx,ts}\""
   },
   "bin": {
-    "pocket-setup": "bin/setup.js"
+    "pocket-setup": "./bin/setup.js"
   },
   "keywords": [
     "gatsby",
