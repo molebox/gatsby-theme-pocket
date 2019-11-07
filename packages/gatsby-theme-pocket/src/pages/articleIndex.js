@@ -37,6 +37,16 @@ const Header = styled.header`
       justufy-content: center;
       align-items: center;
       margin: 1.5em;
+
+      & > h1 {
+        font-size: 2em;
+      }
+  
+      & > h2 {
+        font-size: 1.2em;
+        align-self: center;
+        padding: 1em;
+      }
     }
 `;
 

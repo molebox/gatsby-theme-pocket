@@ -94,6 +94,7 @@ export const Info = styled.div`
   @media (min-width: 48em) {
     margin: 1em;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
   
     & > p {
