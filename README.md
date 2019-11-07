@@ -8,6 +8,26 @@ The articles are filtered by tag so when you save an article in your app or brow
 
 Example live site - [gatsby-theme-pocket-example.netlify.com](https://gatsby-theme-pocket-example.netlify.com/articleIndex)
 
+## v.0.3.0 Changes
+
+Added the ability to use a custom url instead of /articleIndex. A new theme option called `customUrl` enables you to set your own url for the theme page.
+
+Example: 
+
+```
+module.exports = {
+    plugins: [
+        {
+            resolve: 'gatsby-theme-pocket',
+            options: {
+                ...otherProps
+                customUrl: 'research'
+            }
+        }
+    ]
+}
+```
+
 ## Setup
 
 ### Authorize your pocket account

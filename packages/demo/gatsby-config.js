@@ -12,7 +12,7 @@ module.exports = {
                 seoTitle: 'gatsby-theme-pocket',
                 seoDescription: 'A Gatsby theme that adds your pocket app articles to your gatsby website',
                 seoKeywords: ['gatsby', 'react', 'pocket', 'gatsby-theme', 'gatsby-plugin', 'articles'],
-                siteUrl: 'https://www.hungrybearstudio.com/'
+                siteUrl: 'https://www.hungrybearstudio.com/',
             }
         }
     ]

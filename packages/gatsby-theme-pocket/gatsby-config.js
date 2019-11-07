@@ -18,7 +18,8 @@ module.exports = (options) => {
         seoTitle,
         seoDescription,
         seoKeywords,
-        siteUrl
+        siteUrl,
+        customUrl
     } = options;
 
     console.log('ENV: ', process.env.POCKET_CONSUMER_KEY);
@@ -73,7 +74,14 @@ module.exports = (options) => {
               author: 'Rich Haines - Hungry Bear Studio',
               siteUrl,
           }
-      }
+      },
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          name: `pages`,
+          path: `${__dirname}/src/pages/`,
+        },
+      },
       ]
    }
   };
