@@ -6,6 +6,8 @@ The idea behind this theme is to add a curated list of articles of interest to y
 
 The articles are filtered by tag so when you save an article in your app or browser you should tag them so that they are categorized and easier for people to view.
 
+Example live site - [gatsby-theme-pocket-example.netlify.com](https://gatsby-theme-pocket-example.netlify.com/articleIndex)
+
 ## Setup
 
 ### Authorize your pocket account
