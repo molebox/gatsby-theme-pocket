@@ -44,6 +44,7 @@ const Articles = () => {
         if (matchedTag) {
           return (
             <Article
+              key={node.title}
               shadow
               domainFavicon={node.domainFavicon}
               title={node.title}
@@ -59,6 +60,7 @@ const Articles = () => {
         } else if (selectedTags.length === 0) {
           return (
             <Article
+              key={node.title}
               shadow
               domainFavicon={node.domainFavicon}
               title={node.title}
