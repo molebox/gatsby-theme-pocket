@@ -6,12 +6,38 @@ import Articles from "../components/Articles";
 import { useSiteMetadata } from "../useSiteMetadata";
 import SEO from "gatsby-theme-seo/src/components/seo";
 
+const Container = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+`;
+
 const Header = styled.header`
-  display: flex;
-  flex-direction: column;
-  justufy-content: center;
-  align-items: center;
-  margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > h1 {
+      font-size: 1.5em;
+    }
+
+    & > h2 {
+      font-size: 1em;
+      align-self: center;
+      padding: 1em;
+    }
+
+    /* 48em = 768px DESKTOP */
+    @media (min-width: 48em) {
+      display: flex;
+      flex-direction: column;
+      justufy-content: center;
+      align-items: center;
+      margin: 1.5em;
+    }
 `;
 
 /**
@@ -31,8 +57,8 @@ const ArticleIndex = () => {
         title={seoTitle}
         description={seoDescription}
         keywords={seoKeywords}
-        twitter="studio_hungry"
       />
+      <Container>
       <Header>
         <h1
           sx={{
@@ -52,6 +78,7 @@ const ArticleIndex = () => {
         </h2>
       </Header>
       <Articles />
+      </Container>
     </ResetDefaults>
   );
 };

@@ -24,7 +24,7 @@ const Filter = props => {
   return (
     <Select
       sx={{
-        width: "100%",
+        width: "90%",
         position: "sticky",
         top: "0",
         color: "black",

@@ -7,30 +7,47 @@ export const Card = styled.a`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 1.5em;
-  // max-width: 800px;
+  padding: 1em;
+
   margin: 1em;
   cursor: pointer;
   border-radius: 0.5em;
   text-decoration: none;
-  width: 100%;
+  // width: 100%;
 
   & > h2 {
     margin-top: 1em;
     margin-bottom: 1em;
     align-self: center;
-    font-size: 1.4em;
+    font-size: 0.9em;
   }
 
   & > h3 {
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
 
   /* 48em = 768px DESKTOP */
   @media (min-width: 48em) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5em;
+  
+    margin: 1em;
+    cursor: pointer;
+    border-radius: 0.5em;
+    text-decoration: none;
+    width: 100%;
+
     & > h2 {
+      margin-top: 1em;
       margin-bottom: 1em;
       align-self: center;
+      font-size: 1.4em;
+    }
+  
+    & > h3 {
+      font-size: 1.2em;
     }
   }
 
@@ -65,10 +82,23 @@ export const Image = styled.img`
 export const Info = styled.div`
   margin: 1em;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   & > p {
     font-size: 0.7em;
+  }
+
+  /* 48em = 768px DESKTOP */
+  @media (min-width: 48em) {
+    margin: 1em;
+    display: flex;
+    justify-content: space-evenly;
+  
+    & > p {
+      font-size: 0.7em;
+    }
   }
 `;
 
@@ -111,7 +141,7 @@ const Article = ({
           borderTopColor: "black",
           borderBottom: "1px solid",
           borderBottomColor: "black",
-          padding: "0.5em"
+          padding: "0.5em",
         }}
       >
         {title}
