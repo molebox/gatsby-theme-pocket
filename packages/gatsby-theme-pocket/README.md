@@ -34,6 +34,45 @@ module.exports = {
 
 Run `yarn add gatsby-theme-pocket` You will first need to authorize your pocket credentials. Run `yarn pocket-setup` from the command line. Open the browser at the given url and authorize your account. You will then be given an access-token unique to your account. Save this as you will need to pass this to the `gatsby-theme-pocket` in the next step.
 
+## Props
+
+The theme supports the following props: 
+
+| Name                         | Optional   | Type    | Default       |
+|------------------------------|------------|---------|---------------|
+| pocketAccessToken            |   No       | string  | None          |
+| weeksOfHistory               |   No       | number  | None          |
+| tagFilter                    |   No       | boolean | None          |
+| tagFilterString              |   Yes      | string  | '_untagged_'  |
+| searchFilter                 |   No       | boolean | None          |
+| searchFilterString           |   Yes      | string  | 'Web Dev'     |
+| pageTitle                    |   No       | string  | None          |
+| pageDescription              |   No       | string  | None          |
+| seoTitle                     |   No       | string  | None          |
+| seoDescription               |   No       | string  | None          |
+| seoKeywords                  |   No       | string[]| None          |
+| siteUrl                      |   No       | string  | None          |
+| customUrl                    |   Yes      | string  | None          |
+
+### Props Descriptions
+
+- **weeksOfHistory**: Number of weeks worth of articles to fetch
+- **tagFilter**:
+  - `true` will use the `tagFilterString` value to get articles with that tag.
+  - `false` will ignore the `tagFilterString` value
+- **tagFilterString**: If `tagFilter` is true then get articles tagged with this value. `'\_untagged\_'` will only return articles with no tags. It will default to `'\_untagged\_'`.
+- **searchFilter**:
+  - `true` will use the `searchFilterString` value to get articles with that value in the URL or title.
+  - `false` will ignore the `searchFilterString` value
+- **searchFilterString**: If `searchFilter` is true then get articles with this value in the URL or title.
+- **pageTitle**: The h1 title of the articles page
+- **pageDescription**: The h2 dexcription of the articles page
+- **seoTitle**: SEO title of the page
+- **seoDescription**: SEO description of the page
+- **seoKeywords**: SEO keywords as a string array
+- **siteUrl**: Your site URL for SEO
+- **customUrl**: A custom URL to be used instead of the default /articleIndex
+
 ### Setup theme
 
 Once you have the theme installed and your access-token add the theme to your `gatsby-config.js`
@@ -59,18 +98,6 @@ module.exports = {
     ]
 }
 ```
-
-The theme uses `gatsby-source-pocket` under the hood. It accepts the following options:
-
-- **weeksOfHistory**: Number of weeks worth of articles to fetch
-- **tagFilter**:
-  - `true` will use the `tagFilterString` value to get articles with that tag.
-  - `false` will ignore the `tagFilterString` value
-- **tagFilterString**: If `tagFilter` is true then get articles tagged with this value. `'\_untagged\_'` will only return articles with no tags. It will default to `'\_untagged\_'`.
-- **searchFilter**:
-  - `true` will use the `searchFilterString` value to get articles with that value in the URL or title.
-  - `false` will ignore the `searchFilterString` value
-- **searchFilterString**: If `searchFilter` is true then get articles with this value in the URL or title.
 
 The theme ships as a page you can navigate to `my-website/articleIndex` This page will give you centered list of cards with the articles title, excerpt, image if there is on and word count of the article. Each card is an anchor tag so the user can click the card to be taken to the article. 
 
