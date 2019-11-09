@@ -30,7 +30,7 @@ module.exports = (options) => {
       pageDescription,
       seoTitle,
       seoDescription,
-      seoKeywords
+      seoKeywords,
   },
     plugins: [
         {

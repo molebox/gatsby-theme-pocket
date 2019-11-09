@@ -9,9 +9,14 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.22",
+    "@mdx-js/react": "^1.5.1",
     "gatsby": "^2.17.7",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-theme-ui": "^0.2.43",
+    "gatsby-theme-pocket": "*",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "gatsby-theme-pocket": "*"
+    "theme-ui": "^0.2.46"
   }
 }

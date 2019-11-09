@@ -12,9 +12,14 @@ const Container = styled.section`
   flex-direction: column;
   align-items: center;
   margin: 2em;
-
-  max-width: 1080px;
   margin: 0 auto;
+
+  /* 48em = 768px DESKTOP */
+  @media (min-width: 48em) {
+    max-width: 1080px;
+    width: 800px;
+    margin: 0 auto;
+  }
 `;
 
 const Articles = () => {

@@ -59,7 +59,7 @@ const ArticleIndex = () => {
     pageDescription,
     seoTitle,
     seoDescription,
-    seoKeywords
+    seoKeywords,
   } = useSiteMetadata();
   return (
     <ResetDefaults>

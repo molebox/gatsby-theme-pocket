@@ -14,6 +14,18 @@ module.exports = {
                 seoKeywords: ['gatsby', 'react', 'pocket', 'gatsby-theme', 'gatsby-plugin', 'articles'],
                 siteUrl: 'https://www.hungrybearstudio.com/',
             }
-        }
+        },
+        {
+            resolve: 'gatsby-plugin-google-fonts',
+            options: {
+              fonts: [
+                'Josefin Sans',
+                'Poppins',
+                `Open Sans`,
+                `source sans pro\:300,400,400i,700` 
+              ]
+            }
+        },
+        'gatsby-plugin-theme-ui'
     ]
 }

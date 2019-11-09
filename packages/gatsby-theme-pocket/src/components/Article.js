@@ -13,7 +13,6 @@ export const Card = styled.a`
   cursor: pointer;
   border-radius: 0.5em;
   text-decoration: none;
-  // width: 100%;
 
   & > h2 {
     margin-top: 1em;
@@ -69,14 +68,19 @@ export const Card = styled.a`
       : null}
 `;
 
-export const Image = styled.img`
-  width: 100%;
-  height: auto;
+const ImageContainer = styled.div`
+    width: 100%;
+    height: 100%;
+    align-self: center;
+`;
 
-  margin: 1em;
+export const Image = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+
+  margin: 0 auto;
   border-radius: 1em;
   padding: 1em;
-  margin: 1em;
 `;
 
 export const Info = styled.div`
@@ -147,7 +151,11 @@ const Article = ({
       >
         {title}
       </h2>
-      {has_image ? <Image src={imageSrc} alt={`${title}-image`} /> : null}
+      {has_image ? (
+        <ImageContainer>
+          <Image src={imageSrc} alt={`${title}-image`} />
+        </ImageContainer>
+      ) : null}
       <h3
         sx={{
           fontFamily: "body",

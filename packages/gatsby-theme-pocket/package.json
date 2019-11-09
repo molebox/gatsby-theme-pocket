@@ -41,6 +41,7 @@
     "moment": "^2.24.0",
     "node-getpocket": "^1.0.0",
     "react-select": "^3.0.8",
+    "react-switch": "^5.0.1",
     "shelljs": "^0.8.3",
     "theme-ui": "^0.2.46"
   },
