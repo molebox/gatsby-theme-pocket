@@ -30,9 +30,10 @@ const Articles = () => {
   const tags = [...new Set(articleTags)];
   const [selectedTags, setSelectedTags] = React.useState([]);
 
-  const getSelectedTags = selections => {
-    const tags = selections.map(tag => tag.value);
+  const getSelectedTags = (selections) => {
+    const tags = selections.map((tag) => tag.value);
     setSelectedTags(tags);
+    return;
   };
 
   return (
@@ -40,12 +41,17 @@ const Articles = () => {
       <Filter
         getSelectedTags={getSelectedTags}
         sx={{
-          margin: "2em"
+          margin: "2em",
         }}
         tags={tags}
       />
       {articles.map(({ node }) => {
-        const matchedTag = node.tags.some(tag => selectedTags.includes(tag));
+        if (node.url == null && node.title == null && node.word_count == null) {
+          // If these fields are all null, it's very likely this is a deleted article.
+          // Don't render it.
+          return null;
+        }
+        const matchedTag = node.tags.some((tag) => selectedTags.includes(tag));
         if (matchedTag) {
           return (
             <Article
@@ -78,7 +84,7 @@ const Articles = () => {
               time_added={node.time_added}
             />
           );
-        }
+        } else return null;
       })}
     </Container>
   );
