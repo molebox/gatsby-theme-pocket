@@ -38,7 +38,7 @@
     "gatsby-theme-seo": "^1.0.0",
     "gatsby-transformer-sharp": "^2.3.2",
     "isolated-theme-ui": "^1.0.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "node-getpocket": "^1.0.0",
     "react-select": "^3.0.8",
     "react-switch": "^5.0.1",
